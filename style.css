@@ -1,0 +1,134 @@
+body {
+    background-color: rgb(64, 58, 70);
+}
+
+#contactos {
+    border-radius: 4%;
+    border: 1px solid black;
+    min-height: 88vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.agregar{
+    display: flex;
+  justify-content: flex-end; /* Alinea horizontalmente a la derecha */
+  align-items: flex-end; /* Alinea verticalmente hacia abajo */
+    width: 80px;
+    height: 80px;
+}
+.search-bar {
+    width: 500px;
+    /* Ajusta el ancho de la barra */
+    height: 40px;
+    /* Ajusta la altura de la barra */
+    font-size: 18px;
+    /* Tamaño del texto */
+    padding: 10px;
+    /* Espaciado interno */
+}
+
+
+.fav {
+    align-items: flex-end;
+    border: 0;
+    border-color: white;
+    height: 27px;
+    width: 27px;
+
+}
+
+#favoritos {
+    border: none;
+    background-color: white;
+    padding: 0;
+}
+
+.favCuadro{
+    border: 3px solid rgb(64, 58, 70);
+    border-radius: 4%;
+    display: flex;
+}
+
+#numero{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.proyecto {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.bg-negro{
+    color: rgb(#000000);
+
+}
+
+.text-pink {
+    color: rgb(104, 65, 94);
+}
+
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+}
+
+.bree-serif-regular {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    color: white;
+}
+
+
+
+.roboto-mono {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    color: rgb(8, 8, 8);
+    font-size: 30px;
+}
+
+
+
+.me {
+    border-radius: 30%;
+    width: 120px;
+    /* Ajusta el tamaño según tus necesidades */
+    height: 120px;
+    /* Ajusta el tamaño según tus necesidades */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    /* Elimina el padding adicional */
+    margin: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bg-purple {
+    background-color: rgb(158, 136, 177);
+}
+
