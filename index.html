@@ -66,13 +66,25 @@
     </header>
 
     <main>
-
+       
+        <div id="mensaje-bienvenida">
+            <h2>¡Bienvenid@!</h2>
+            <p>Nos alegra tenerte en nuestra agenda. Aquí podrás organizar y gestionar todos tus contactos de manera sencilla.</p>
+        </div>
+        
         
         <section class="container d-flex px-4 py-5 text-center mt-5 mb-5" id="contactos">
-
+            
+           
             <div class="principal">
-                <p class="lato-bold">Contactos</p>
-                <div class="row g-4 py-5 row-cols-3 row-cols-lg-2 ">
+                <div class="titulo d-flex justify-content-between align-items-center position-relative">
+                    <p class="lato-bold mx-auto mb-0">Lista de contactos</p>
+                    <button id="boton"><img id="agregar" src="imagenes/agregar.png" alt="Agregar contacto">
+                    </button>
+                    
+                </div>
+
+                <div class="row g-4 py-5 row-cols-3 row-cols-lg-3 ">
 
                     <div class="feature col">
                         <div class="feature-icon custom-icon ">
@@ -80,8 +92,8 @@
                             <img class="me" src="imagenes/contacto.jpg" alt="foto">
                         </div>
                         <h3 class="fs-2 text-body-emphasis lato-light">Miryam Salazar</h3>
-                        <p id="numero">2221456782</p>
-
+                        <p id="numero"> <i class="bi bi-telephone"></i> 2221456782</p>
+                        <i class="bi bi-envelope"></i>
                         <a href="mailto:miryamS@gmail.com">miryamS@gmail.com</a>
 
                     </div>
@@ -95,7 +107,8 @@
                         </div>
 
                         <h3 class="fs-2 text-body-emphasis lato-light ">Eduardo Hernandez</h3>
-                        <p id="numero">2221421663</p>
+                        <p id="numero"> <i class="bi bi-telephone"></i> 2221421663</p>
+                        <i class="bi bi-envelope"></i>
                         <a href="mailto:Lalitho@gmail.com">Lalitho@gmail.com</a>
 
                     </div>
@@ -108,7 +121,8 @@
                         </div>
 
                         <h3 class="fs-2 text-body-emphasis lato-light">Hugo Guevara</h3>
-                        <p id="numero">2267821663</p>
+                        <p id="numero">  <i class="bi bi-telephone"></i> 2267821663</p>
+                        <i class="bi bi-envelope"></i>
                         <a href="mailto:hugoboing@gmail.com">hugoboing@gmail.com</a>
 
                     </div>
@@ -121,7 +135,8 @@
                         </div>
 
                         <h3 class="fs-2 text-body-emphasis lato-light">Ulises Castillo</h3>
-                        <p id="numero">2229421323</p>
+                        <p id="numero">  <i class="bi bi-telephone"></i> 2229421323</p>
+                        <i class="bi bi-envelope"></i>
                         <a href="mailto:Uli@gmail.com">Uli@gmail.com</a>
 
                     </div>
@@ -134,7 +149,8 @@
                         </div>
 
                         <h3 class="fs-2 text-body-emphasis lato-light">Pedro Juarez</h3>
-                        <p id="numero">2221596660</p>
+                        <p id="numero">  <i class="bi bi-telephone"></i> 2221596660</p>
+                        <i class="bi bi-envelope"></i>
                         <a href="mailto:pjuarez@gmail.com">pjuarez@gmail.com</a>
 
                     </div>
@@ -147,66 +163,119 @@
                         </div>
 
                         <h3 class="fs-2 text-body-emphasis lato-light">Minerva Guzman</h3>
-                        <p id="numero">2221098765</p>
+                        <p id="numero">  <i class="bi bi-telephone"></i> 2221098765</p>
+                        <i class="bi bi-envelope"></i>
                         <a href="mailto:mine@gmail.com">mine@gmail.com</a>
 
 
                     </div>
 
+                    <div class="feature col">
+                        <div class="feature-icon custom-icon ">
+                            <button id="favoritos"><img class="fav" src="imagenes/nfav.png" alt="foto"></button>
+                            <img class="me" src="imagenes/contacto.jpg" alt="foto" height="60px" width="60px">
+                        </div>
+
+                        <h3 class="fs-2 text-body-emphasis lato-light">Denisse Alonso</h3>
+                        <p id="numero">  <i class="bi bi-telephone"></i> 2221098765</p>
+                        <i class="bi bi-envelope"></i>
+                        <a href="mailto:denis@gmail.com">denisA@gmail.com</a>
+
+
+                    </div>
+
+                    <div class="feature col">
+                        <div class="feature-icon custom-icon ">
+                            <button id="favoritos"><img class="fav" src="imagenes/nfav.png" alt="foto"></button>
+                            <img class="me" src="imagenes/contacto.jpg" alt="foto" height="60px" width="60px">
+                        </div>
+                        <h3 class="fs-2 text-body-emphasis lato-light">Deyna Hernandez</h3>
+                        <p id="numero">  <i class="bi bi-telephone"></i> 2221098765</p>
+                        <i class="bi bi-envelope"></i>
+                        <a href="mailto:deyna@gmail.com">deyna@gmail.com</a>
+
+
+                    </div>
+
+                    <div class="feature col">
+                        <div class="feature-icon custom-icon ">
+                            <button id="favoritos"><img class="fav" src="imagenes/nfav.png" alt="foto"></button>
+                            <img class="me" src="imagenes/contacto.jpg" alt="foto" height="60px" width="60px">
+                        </div>
+
+                        <h3 class="fs-2 text-body-emphasis lato-light">Fernanda Dumit</h3>
+                        <p id="numero">  <i class="bi bi-telephone"></i> 2221098765</p>
+                        <i class="bi bi-envelope"></i>
+                        <a href="mailto:denis@gmail.com">ferd@gmail.com</a>
+
+
+                    </div>
+
+                    <div class="feature col">
+                        <div class="feature-icon custom-icon ">
+                            <button id="favoritos"><img class="fav" src="imagenes/nfav.png" alt="foto"></button>
+                            <img class="me" src="imagenes/contacto.jpg" alt="foto" height="60px" width="60px">
+                        </div>
+                        <h3 class="fs-2 text-body-emphasis lato-light">Patricia Hernandez</h3>
+                        <p id="numero">  <i class="bi bi-telephone"></i> 2221098765</p>
+                        <i class="bi bi-envelope"></i>
+                        <a href="mailto:deyna@gmail.com">paty@gmail.com</a>
+
+
+                    </div>
+    
+                </div>
+                
+        </div>
+
+        <div class="favCuadro">
+            <div class="row g-4 py-5 row-cols-3 row-cols-lg-1 border-color:"dark">
+                <p class="roboto-mono">Favoritos</p>
+                
+                <div class="feature col">
+                    <div class="feature-icon custom-icon ">
+                        <button id="favoritos"><img class="fav" src="imagenes/fav.png" alt="foto"></button>
+                        <img class="me" src="imagenes/contacto.jpg" alt="foto" height="60px" width="60px">
+                    </div>
+
+                    <h3 class="fs-2 text-body-emphasis lato-light">Marlem M</h3>
+                    <p id="numero"> <i class="bi bi-telephone"></i> 2234509865</p>
+                    <i class="bi bi-envelope"></i>
+                    <a href="mailto:marlem@gmail.com">marlem@gmail.com</a>
                 </div>
 
-            </div>
-            <div class="favCuadro">
-                <div class="row g-4 py-5 row-cols-3 row-cols-lg-1 border-color:" dark";>
-                    <p class="roboto-mono">Favoritos</p>
-                    <div class="feature col">
-                        <div class="feature-icon custom-icon ">
-                            <button id="favoritos"><img class="fav" src="imagenes/fav.png" alt="foto"></button>
-                            <img class="me" src="imagenes/contacto.jpg" alt="foto" height="60px" width="60px">
-                        </div>
 
-                        <h3 class="fs-2 text-body-emphasis lato-light">Marlem Martinez</h3>
-                        <p id="numero">2234509865</p>
-                        <a href="mailto:marlem@gmail.com">marlem@gmail.com</a>
+                <div class="feature col">
+                    <div class="feature-icon custom-icon ">
+                        <button id="favoritos"><img class="fav" src="imagenes/fav.png" alt="foto"></button>
+                        <img class="me" src="imagenes/contacto.jpg" alt="foto" height="60px" width="60px">
                     </div>
 
+                    <h3 class="fs-2 text-body-emphasis lato-light">Anette</h3>
+                    <p id="numero">  <i class="bi bi-telephone"></i> 2298712309</p>
+                    <i class="bi bi-envelope"></i>
+                    <a href="mailto:michel@gmail.com">michel@gmail.com</a>
 
-                    <div class="feature col">
-                        <div class="feature-icon custom-icon ">
-                            <button id="favoritos"><img class="fav" src="imagenes/fav.png" alt="foto"></button>
-                            <img class="me" src="imagenes/contacto.jpg" alt="foto" height="60px" width="60px">
-                        </div>
-
-                        <h3 class="fs-2 text-body-emphasis lato-light">Anette Michel</h3>
-                        <p id="numero">2298712309</p>
-                        <a href="mailto:michel@gmail.com">michel@gmail.com</a>
-
-                    </div>
-
-
-                    <div class="feature col">
-                        <div class="feature-icon custom-icon ">
-                            <button id="favoritos"><img class="fav" src="imagenes/fav.png" alt="foto"></button>
-                            <img class="me" src="imagenes/contacto.jpg" alt="foto" height="60px" width="60px">
-                        </div>
-
-                        <h3 class="fs-2 text-body-emphasis lato-light">Mariam Guevara</h3>
-                        <p id="numero">2287903663</p>
-                        <a href="mailto:mariam@gmail.com">mariam@gmail.com</a>
-                    </div>
                 </div>
+
+
+                <div class="feature col">
+                    <div class="feature-icon custom-icon ">
+                        <button id="favoritos"><img class="fav" src="imagenes/fav.png" alt="foto"></button>
+                        <img class="me" src="imagenes/contacto.jpg" alt="foto" height="60px" width="60px">
+                    </div>
+
+                    <h3 class="fs-2 text-body-emphasis lato-light">Mariam Guevara</h3>
+                    <p id="numero">  <i class="bi bi-telephone"></i> 2287903663</p>
+                    <i class="bi bi-envelope"></i>
+                    <a href="mailto:mariam@gmail.com">mariam@gmail.com</a>
+                </div>
+                
             </div>
-            
+           
+        </div>
+        
         </section>
-       
-
-
-
-
-
-
-
-
 
     </main>
 

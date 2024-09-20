@@ -23,6 +23,7 @@ body {
     width: 80px;
     height: 80px;
 }
+
 .search-bar {
     width: 500px;
     /* Ajusta el ancho de la barra */
@@ -56,8 +57,17 @@ body {
     display: flex;
 }
 
+#boton{ 
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none; /* Elimina el borde del botón */
+    background: transparent; /* Fondo transparente */
+}
+
 #numero{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+   
 }
 
 .proyecto {
@@ -71,8 +81,42 @@ body {
 
 }
 
-.text-pink {
-    color: rgb(104, 65, 94);
+
+
+.me {
+    border-radius: 50%;
+    width: 100px;
+    /* Ajusta el tamaño según tus necesidades */
+    height: 100px;
+    /* Ajusta el tamaño según tus necesidades */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    /* Elimina el padding adicional */
+    margin: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bg-purple {
+    background-color: rgb(158, 136, 177);
+}
+
+#agregar{
+    
+    width: 90px; /* Ajusta el tamaño del icono */
+    height: auto;
+
+}
+
+#usuario{
+    color: white;
+}
+
+.titulo{
+    position: relative;
+    margin-bottom: 1rem;
 }
 
 
@@ -111,24 +155,18 @@ body {
 }
 
 
-
-.me {
-    border-radius: 30%;
-    width: 120px;
-    /* Ajusta el tamaño según tus necesidades */
-    height: 120px;
-    /* Ajusta el tamaño según tus necesidades */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    /* Elimina el padding adicional */
-    margin: 2px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+#mensaje-bienvenida {
+    font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    background-color: #9a8da4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
 }
 
-.bg-purple {
-    background-color: rgb(158, 136, 177);
+#mensaje-bienvenida h2 {
+    color: #3b2a41;
 }
 
+#mensaje-bienvenida p {
+    color: #3b2a41;
+}
