@@ -4,7 +4,7 @@ body {
 
 #contactos {
     border-radius: 4%;
-    border: 1px solid black;
+    border:transparent
     min-height: 88vh;
     display: flex;
     justify-content: start;
@@ -39,7 +39,7 @@ body {
 .fav {
     align-items: flex-end;
     border: 0;
-    border-color: white;
+    border-color:transparent;
     height: 27px;
     width: 27px;
 
@@ -52,7 +52,7 @@ body {
 }
 
 .favCuadro{
-    border: 3px solid rgb(64, 58, 70);
+    border: transparent;
     border-radius: 4%;
     display: flex;
 }
@@ -170,3 +170,8 @@ body {
 #mensaje-bienvenida p {
     color: #3b2a41;
 }
+
+
+
+/*ESTO AGREGUE*/
+
