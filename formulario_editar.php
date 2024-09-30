@@ -1,6 +1,6 @@
 <?php
 // formulario.php
-include("Conexion.php");
+include "Conexiones/Conexion.php";
 $conexion = conectar();
 
 if (isset($_GET['id'])) {

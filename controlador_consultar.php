@@ -1,6 +1,6 @@
 <?php
 
-include("Conexion.php");
+include "Conexiones/Conexion.php";
 
 // Conectar a la base de datos
 

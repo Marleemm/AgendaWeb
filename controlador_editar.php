@@ -1,5 +1,6 @@
 <?php
-include 'Conexion.php';
+include "Conexiones/Conexion.php";
+
 $conexion=conectar();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id = intval($_POST['contacto_id']);

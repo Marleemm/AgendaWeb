@@ -1,5 +1,5 @@
 <?php
-include 'Conexion.php'; // Conexión a la base de datos
+include "Conexiones/Conexion.php";
 $conn=conectar();
 // Verificar si se ha enviado un ID
 if (isset($_GET['id'])) {

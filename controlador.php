@@ -1,5 +1,5 @@
 <?php
-include("Conexion.php"); // Asegúrate de incluir tu archivo de conexión a la base de datos
+include "Conexiones/Conexion.php";
 $conexion = conectar();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
