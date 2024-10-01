@@ -1,7 +1,6 @@
 <?php
-include "Conexiones/Conexion.php";
 
-// Conexión a la base de datos
+include __DIR__ . '/../Conexiones/Conexion.php';
 $conexion = conectar();
 
 if (isset($_POST['eliminar'])) {
@@ -11,19 +10,18 @@ if (isset($_POST['eliminar'])) {
         $consulta = "DELETE FROM contactos WHERE id IN ($ids)";
 
         if (mysqli_query($conexion, $consulta)) {
+            
             // Redirigir con éxito
-            header("Location: index.php");
+           // header("Location: ../index.php");
+           echo __DIR__;
 
             echo "Contactos eliminados correctamente.";
             exit();
         } else {
-            // Redirigir con error
-            header("Location: index.php");
-
+            
             echo "Error al eliminar los contactos: " . mysqli_error($conexion);
         }
     } else {
-        header("Location: index.php");
 
         // Redirigir si no se seleccionaron contactos
         exit();

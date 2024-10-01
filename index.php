@@ -1,4 +1,4 @@
-<?php include "controlador_consultar.php"; ?>
+<?php include "Controladores/controlador_consultar.php"; ?>
 
 
 <!DOCTYPE html>
@@ -90,7 +90,7 @@
 
                 <div id="formulario-container"></div>
 
-                <form id="eliminar-contactos-form" method="POST" action="controlador.php">
+                <form id="eliminar-contactos-form" method="POST" action="./Controladores/controlador.php">
                     <div class="row g-4 py-5 row-cols-1 row-cols-md-3" id="lista">
                         <?php mostrarGeneral(); ?>
                     </div>
@@ -140,7 +140,7 @@
         crossorigin="anonymous"></script>
 
 
-    <script src="mostrar.js"> </script>
+    <script src="Scripts/agregar.js"> </script>
 
     <script>
         document.getElementById('btn-eliminar').addEventListener('click', function(event) {
@@ -178,42 +178,11 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.favoritos').click(function() {
-                var button = $(this);
-                var contactoId = button.data('id');
-
-                var currentImg = button.find('img');
-                var currentSrc = currentImg.attr('src');
-
-                var newSrc = currentSrc.includes('imagenes/nfav.png') ? 'imagenes/fav.png' : 'imagenes/nfav.png';
-                var isFavorito = newSrc.includes('imagenes/fav.png') ? 1 : 0; // 1 si es favorito, 0 si no
-
-                // Cambiar la imagen
-                currentImg.attr('src', newSrc);
-
-                $.ajax({
-                    url: 'controlador_favorito.php', // Archivo PHP que manejará la actualización
-                    type: 'POST',
-                    data: {
-                        id: contactoId,
-                        favorito: isFavorito // 1 si es favorito, 0 si no
-                    },
-                    success: function(response) {
-                        console.log(response); // Puedes manejar la respuesta si es necesario
-                        location.reload(); // Recargar la página después de actualizar
-
-                    },
-                    error: function(xhr, status, error) {
-                        console.error('Error:', error); // Manejar el error
-                    }
-                });
-            });
-        });
+    <script src="Scripts/favoritos.js">
+       
     </script>
-    <script src="filtrar.js"></script>
-    <script src="filtrar_nofav.js"></script>
+    <script src="Scripts/filtrar.js"></script>
+    <script src="Scripts/filtrar_nofav.js"></script>
 </body>
 
 </html>

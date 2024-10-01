@@ -1,6 +1,6 @@
 <?php
-include "Conexiones/Conexion.php";
 
+include __DIR__ . '/../Conexiones/Conexion.php';
 $conexion=conectar();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id = intval($_POST['contacto_id']);
@@ -12,9 +12,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (mysqli_query($conexion, $query)) {
         echo "Contacto actualizado con éxito.";
-        header("Location: index.php");
+        header("Location: ../index.php");
     } else {
         echo "Error al actualizar el contacto: " . mysqli_error($conexion);
     }
 }
-?>
+

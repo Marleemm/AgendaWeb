@@ -1,8 +1,7 @@
 <?php
 
-include "Conexiones/Conexion.php";
+include __DIR__ . '/../Conexiones/Conexion.php';
 
-// Conectar a la base de datos
 
 
 // Verificar si hay contactos en la base de datos

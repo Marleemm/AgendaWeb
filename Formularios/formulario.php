@@ -82,7 +82,7 @@
     
     
 
-    <form id="contacto-form"  method="POST" action="controlador_agregar.php" >
+    <form id="contacto-form"  method="POST" action="Controladores/controlador_agregar.php" >
     <label for="nombre">Nombre: </label>
         <input type="text" id="nombre" name="nombre" required>
         <br><br>

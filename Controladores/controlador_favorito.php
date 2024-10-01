@@ -1,5 +1,5 @@
 <?php
-include "Conexiones/Conexion.php";
+include __DIR__ . '/../Conexiones/Conexion.php';
 
 $conexion = conectar();
 
@@ -15,9 +15,9 @@ if (isset($_POST['id']) && isset($_POST['favorito'])) {
 
 
         echo "Contacto actualizado con éxito";
-        header("Location: index.php");
+        header("Location: ../index.php");
     } else {
         echo "Error al actualizar el contacto: " . mysqli_error($conexion);
     }
 }
-?>
+

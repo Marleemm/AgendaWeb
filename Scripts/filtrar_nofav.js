@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('orden-az').addEventListener('click', function() {
         // Cargar contactos ordenados de A-Z
-        fetch('controlador_nofav.php?criterio=nombre&orden=asc')
+        fetch('../AgendaWeb/Controladores/controlador_nofav.php?criterio=nombre&orden=asc')
             .then(response => response.text())
             .then(html => {
                 document.getElementById('listano').innerHTML = html;
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('orden-za').addEventListener('click', function() {
         // Cargar contactos ordenados de Z-A
-        fetch('controlador_nofav.php?criterio=nombre&orden=desc')
+        fetch('../AgendaWeb/Controladores/controlador_nofav.php?criterio=nombre&orden=desc')
             .then(response => response.text())
             .then(html => {
                 document.getElementById('listano').innerHTML = html;

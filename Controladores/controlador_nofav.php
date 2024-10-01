@@ -1,5 +1,5 @@
 <?php
-include "Conexiones/Conexion.php";
+include __DIR__ . '/../Conexiones/Conexion.php';
 $conexion=conectar();
 
 // Obtener el criterio de ordenamiento y la dirección (asc o desc)
@@ -38,4 +38,4 @@ while ($contacto = $resultado->fetch_assoc()) {
         </div>';
     }
 }
-?>
+

@@ -1,8 +1,7 @@
 <?php
 
-include "Conexiones/Conexion.php";
 
-// Conexión a la base de datos
+include __DIR__ . '/../Conexiones/Conexion.php';
 $conexion = conectar();
 
 if (isset($_POST['agregar'])) {
@@ -21,7 +20,7 @@ if (isset($_POST['agregar'])) {
         if (mysqli_query($conexion, $consulta)) {
 
 
-            header("Location: index.php");
+           header("Location: ../index.php");
             echo "<div class='alert alert-success'>Contacto registrado con éxito</div>";
         } else {
             echo "<div class='alert alert-danger'>Error al registrar el contacto: " . mysqli_error($conexion) . "</div>";

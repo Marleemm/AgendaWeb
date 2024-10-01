@@ -6,7 +6,7 @@ const formularioContainer = document.getElementById('formulario-container');
 boton.addEventListener('click', function() {
     if (!formularioContainer.innerHTML) {
         // Cargar el contenido del formulario desde el archivo HTML
-        fetch('formulario.php')
+        fetch('Formularios/formulario.php')
             .then(response => response.text())
             .then(html => {
                 formularioContainer.innerHTML = html;
