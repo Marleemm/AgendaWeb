@@ -21,7 +21,6 @@ if (isset($_POST['agregar'])) {
 
 
            header("Location: ../index.php");
-            echo "<div class='alert alert-success'>Contacto registrado con éxito</div>";
         } else {
             echo "<div class='alert alert-danger'>Error al registrar el contacto: " . mysqli_error($conexion) . "</div>";
         }

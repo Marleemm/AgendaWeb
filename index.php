@@ -47,7 +47,7 @@
                 </div>
 
                 <!-- Barra de búsqueda centrada -->
-               
+
                 <!-- Íconos a la derecha -->
                 <div class="d-flex align-items-center">
                     <div class="dropdown">
@@ -60,8 +60,9 @@
                         </ul>
                     </div>
                     <div></div>
+
                     <a class="nav-link dropdown-toggle" id="btn-editar"><img src="imagenes/editar.png" alt="editar" height="40px" width="50px"></a>
-                   
+
                     <a class="nav-link dropdown-toggle" id="btn-eliminar"><img src="imagenes/borrar.png" alt="borrar" height="40px" width="50px"></a>
                 </div>
             </div>
@@ -70,54 +71,62 @@
     </header>
 
     <main>
-        
+
         <div id="mensaje-bienvenida">
             <h2>¡Bienvenid@!</h2>
             <p>Nos alegra tenerte en nuestra agenda. Aquí podrás organizar y gestionar todos tus contactos de manera sencilla.</p>
         </div>
-        
+
         <section class="container d-flex px-4 py-5 text-center mt-5 mb-5" id="contactos">
-    <div class="row">
-        <!-- Sección de la lista de contactos (Izquierda) -->
-        <div class="col-12 col-md-8"> <!-- Toma el 100% en pantallas pequeñas y el 66.67% en pantallas medianas o mayores -->
-            <div class="principal">
-                <div class="titulo d-flex justify-content-between align-items-center position-relative">
-                    <p class="lato-bold mx-auto mb-0">Lista de contactos</p>
-                    <button id="boton">
-                        <img id="agregar" src="imagenes/agregar.png" alt="Agregar contacto">
-                    </button>
-                </div>
+            <div class="row">
+                <!-- Sección de la lista de contactos (Izquierda) -->
+                <div class="col-12 col-md-8"> <!-- Toma el 100% en pantallas pequeñas y el 66.67% en pantallas medianas o mayores -->
+                    <div class="principal">
+                        <div class="titulo d-flex justify-content-between align-items-center position-relative">
 
-                <div id="formulario-container"></div>
+                            <p class="lato-bold mx-auto mb-0">Lista de contactos</p>
 
-                <form id="eliminar-contactos-form" method="POST" action="./Controladores/controlador.php">
-                    <div class="row g-4 py-5 row-cols-1 row-cols-md-3" id="lista">
-                        <?php mostrarGeneral(); ?>
-                    </div>
 
-                    <button type="submit" id="eliminar" style="display:none;" name="action" value="eliminar" class="btn btn-danger">Eliminar Seleccionados</button>
-                    <button type="submit" id="editar" style="display:none;" name="action" value="editar" class="btn btn-secondary">Editar Seleccionado</button>
-                </form>
-            </div>
-        </div>
 
-        <!-- Sección de favoritos (Derecha) -->
-        <div class="col-12 col-md-4"> <!-- Toma el 100% en pantallas pequeñas y el 33.33% en pantallas medianas o mayores -->
-            <div>
-                <p class="roboto-mono">Favoritos</p>
-                <div class="favCuadro">
-                    <div class="row g-4 py-5 row-cols-1 row-cols-md-1" id="listano">
-                        <?php mostrarFavoritos(); ?>
+                            <!---Boton de agregar contacto-->
+
+                            <button id="boton" onclick=" cargarFormularioAgregar()">
+                                <img id="agregar" src="imagenes/agregar.png" alt="Agregar contacto">
+                            </button>
+
+
+                        </div>
+                        <!--- Formulario de agregar contacto -->
+                        <div id="formulario-agregar"></div>
+
+                        <form id="eliminar-contactos-form" method="POST" action="./Controladores/controlador.php">
+                            <div class="row g-4 py-5 row-cols-1 row-cols-md-3" id="lista">
+                                <?php mostrarGeneral(); ?>
+                            </div>
+
+                            <button type="submit" id="eliminar" style="display:none;" name="action" value="eliminar" class="btn btn-danger">Eliminar Seleccionados</button>
+                            <button type="submit" id="editar" style="display:none;" name="action" value="editar" class="btn btn-secondary">Editar Seleccionado</button>
+                        </form>
                     </div>
                 </div>
+
+                <!-- Sección de favoritos (Derecha) -->
+                <div class="col-12 col-md-4"> <!-- Toma el 100% en pantallas pequeñas y el 33.33% en pantallas medianas o mayores -->
+                    <div>
+                        <p class="roboto-mono">Favoritos</p>
+                        <div class="favCuadro">
+                            <div class="row g-4 py-5 row-cols-1 row-cols-md-1" id="listano">
+                                <?php mostrarFavoritos(); ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
 
 
-</main>
+    </main>
 
 
 
@@ -178,9 +187,7 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="Scripts/favoritos.js">
-       
-    </script>
+    <script src="Scripts/favoritos.js"></script>
     <script src="Scripts/filtrar.js"></script>
     <script src="Scripts/filtrar_nofav.js"></script>
 </body>

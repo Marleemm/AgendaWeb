@@ -2,8 +2,7 @@
 include __DIR__ . '/../Conexiones/Conexion.php';
 $conexion=conectar();
 
-// Obtener el criterio de ordenamiento y la dirección (asc o desc)
-$criterio = isset($_GET['criterio']) ? $_GET['criterio'] : 'nombre'; // Predeterminado: ordenar por nombre
+$criterio = isset($_GET['criterio']) ? $_GET['criterio'] : 'nombre'; 
 $orden = isset($_GET['orden']) ? $_GET['orden'] : 'asc'; // Predeterminado: ascendente
 
 // Consultar contactos ordenados

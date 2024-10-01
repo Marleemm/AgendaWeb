@@ -14,7 +14,6 @@ if (isset($_POST['id']) && isset($_POST['favorito'])) {
     if (mysqli_query($conexion, $consulta)) {
 
 
-        echo "Contacto actualizado con éxito";
         header("Location: ../index.php");
     } else {
         echo "Error al actualizar el contacto: " . mysqli_error($conexion);

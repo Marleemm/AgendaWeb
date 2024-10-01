@@ -4,6 +4,7 @@ $(document).ready(function() {
         var contactoId = button.data('id');
 
         var currentImg = button.find('img');
+
         var currentSrc = currentImg.attr('src');
 
         var newSrc = currentSrc.includes('imagenes/nfav.png') ? 'imagenes/fav.png' : 'imagenes/nfav.png';
@@ -17,11 +18,11 @@ $(document).ready(function() {
             type: 'POST',
             data: {
                 id: contactoId,
-                favorito: isFavorito // 1 si es favorito, 0 si no
+                favorito: isFavorito 
             },
             success: function(response) {
                 console.log(response); // Puedes manejar la respuesta si es necesario
-                location.reload(); // Recargar la página después de actualizar
+                location.reload(); 
 
             },
             error: function(xhr, status, error) {

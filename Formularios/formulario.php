@@ -70,7 +70,7 @@
 
  
 
-<div id="fondo-oscuro"></div>
+
 
 <div id="formulario-contacto">
 

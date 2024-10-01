@@ -1,15 +1,12 @@
-// Selecciona el botón
-const boton = document.getElementById('boton');
-const formularioContainer = document.getElementById('formulario-container');
+function cargarFormularioAgregar() {
+    const formularioAgregar = document.getElementById('formulario-agregar');
+    const url = '../AgendaWeb/Formularios/formulario.php'; // Ruta al formulario
 
-// Cargar el formulario de forma dinámica
-boton.addEventListener('click', function() {
-    if (!formularioContainer.innerHTML) {
-        // Cargar el contenido del formulario desde el archivo HTML
-        fetch('Formularios/formulario.php')
+    if (!formularioAgregar.innerHTML) {
+        fetch(url)
             .then(response => response.text())
             .then(html => {
-                formularioContainer.innerHTML = html;
+                formularioAgregar.innerHTML = html;
                 const formularioContacto = document.getElementById('formulario-contacto');
                 const cerrarBtn = document.getElementById('cerrar');
 
@@ -23,8 +20,7 @@ boton.addEventListener('click', function() {
                 console.error('Error al cargar el formulario:', error);
             });
     } else {
-        // Si ya está cargado, simplemente mostrar el formulario
         const formularioContacto = document.getElementById('formulario-contacto');
         formularioContacto.style.display = 'block';
     }
-});
+}
